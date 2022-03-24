@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --dark-blue: #0f1f33;
+  --dark-green: #254019;
+  --gray: #aaaaaa;
+  --light-gray: #dddddd;
+}
+
+.bg-blue {
+  background: var(--dark-blue);
+}
+
+.bg-green {
+  background: var(--dark-green);
+}
+
+.bg-gray {
+  background: var(--gray);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1;
+}

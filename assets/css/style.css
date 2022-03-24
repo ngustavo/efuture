@@ -1,0 +1,115 @@
+@import url("normalize.css");
+
+@import url("presets.css");
+
+body {
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1.5rem;
+  position: absolute;
+}
+
+section {
+  min-height: 90vh;
+  width: 100%;
+}
+
+.text {
+  max-width: 500px;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  text-shadow: 1px 1px 2px black;
+  font-size: 1.2em;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+}
+
+.absolute {
+  position: absolute;
+}
+
+button {
+  background-color: red;
+  cursor: pointer;
+  padding: 1.2rem 3rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+button:hover {
+  border: 2px solid white;
+}
+
+.scene-1 {
+  background-image: url("../img/cena-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.scene-1 header img {
+  height: 3rem;
+}
+
+.scene-1 article img {
+  min-width: 40vw;
+  min-height: 60vh;
+  max-width: 96vw;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.scene-1 button {
+  margin-bottom: -75vh;
+  position: absolute;
+}
+
+h1 span {
+  font-weight: normal;
+}
+
+.scene-2 article,
+.scene-3 article {
+  gap: 10vw;
+  flex-wrap: wrap;
+  padding: 5vh;
+}
+
+.scene-2 article img,
+.scene-3 article img {
+  max-width: 50vw;
+  max-height: 50vh;
+  margin: 5vw;
+}
+
+.scene-3 button {
+  margin: 5vh auto;
+}
+
+.scene-3 button:hover {
+  margin: calc(5vh - 2px) auto;
+}
+
+footer {
+  margin: 1vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
