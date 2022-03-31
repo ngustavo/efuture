@@ -99,7 +99,7 @@ h1 span {
   background-position: center;
 }
 
-.scene-3 .img {
+.scene-3 img {
   width: 50vh;
   min-height: 400px;
   object-fit: contain;
