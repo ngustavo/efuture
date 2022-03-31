@@ -93,6 +93,18 @@ h1 span {
   margin: 5vw;
 }
 
+.scene-3 {
+  background-image: url("../img/cena-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.scene-3 .img {
+  width: 50vh;
+  min-height: 400px;
+  object-fit: contain;
+}
+
 .scene-3 button {
   margin: 5vh auto;
 }
