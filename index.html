@@ -35,7 +35,7 @@
           Monitoramento <br />
           de atividades
         </div>
-        <button>QUERO SABER MAIS</button>
+        <button class="btn-border">QUERO SABER MAIS</button>
       </article>
     </section>
     <section class="flex bg-gray scene-2">
@@ -78,9 +78,30 @@
             - Calendário, lembrete e notificações<br />
             - Muita praticidade no seu dia a dia
           </div>
-          <button>ADQUIRA JÁ O SEU</button>
+          <button class="btn-border">ADQUIRA JÁ O SEU</button>
         </div>
-        <img src="assets/img/slide_1_09.png" alt="" />
+        <div
+          class="slider-wrapper flex flex-col"
+          onmouseenter="mouseEnter()"
+          onmouseleave="mouseLeave()"
+        >
+          <div class="slider-box">
+            <div class="slider">
+              <img src="assets/img/slide1_07.png" alt="" />
+              <img src="assets/img/slide2_07.png" alt="" />
+              <img src="assets/img/slide3_07.png" alt="" />
+              <img src="assets/img/slide4_07.png" alt="" />
+            </div>
+          </div>
+          <div class="btn flex">
+            <button onclick="prevClick()" class="btn-left">
+              <img src="assets/img/button.png" alt="" />
+            </button>
+            <button onclick="nextClick()" class="btn-right">
+              <img src="assets/img/button.png" alt="" />
+            </button>
+          </div>
+        </div>
       </article>
       <footer>Made with 🧠 by Mind</footer>
     </section>

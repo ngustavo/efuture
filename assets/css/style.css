@@ -48,7 +48,7 @@ button {
   text-shadow: 1px 1px 5px black;
 }
 
-button:hover {
+.btn-border:hover {
   border: 2px solid white;
 }
 
@@ -99,23 +99,64 @@ h1 span {
   background-position: center;
 }
 
-.scene-3 img {
-  width: 50vh;
-  min-height: 400px;
-  object-fit: contain;
-}
-
-.scene-3 button {
+.scene-3 .content button {
   margin: 5vh auto;
 }
 
-.scene-3 button:hover {
+.scene-3 .content button:hover {
   margin: calc(5vh - 2px) auto;
 }
 
 footer {
   margin: 1vh;
   text-align: center;
+}
+
+.scene-3 .slider img {
+  width: 30vw;
+  height: 50vh;
+  object-fit: contain;
+  margin: 0px;
+  transition: display 2s ease;
+  float: left;
+}
+
+.slider-box {
+  width: 30vw;
+  overflow: hidden;
+}
+
+.slider {
+  transition: all 0.5s ease;
+}
+
+.slider-wrapper:hover .btn {
+  visibility: visible;
+}
+
+.slider-wrapper {
+  height: 50vh;
+}
+
+.scene-3 .btn {
+  visibility: hidden;
+  justify-content: space-between;
+  margin-top: -200px;
+}
+
+.scene-3 .btn button {
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+.scene-3 .btn button img {
+  width: 50px;
+  margin: 0px;
+}
+
+.scene-3 .btn-right {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 900px) {
