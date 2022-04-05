@@ -79,6 +79,17 @@ h1 span {
   font-weight: normal;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
+.scene-2 {
+  background-image: url("../img/cena-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .scene-2 article,
 .scene-3 article {
   gap: 10vw;
@@ -97,14 +108,6 @@ h1 span {
   background-image: url("../img/cena-3.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.scene-3 .content button {
-  margin: 5vh auto;
-}
-
-.scene-3 .content button:hover {
-  margin: calc(5vh - 2px) auto;
 }
 
 footer {
@@ -136,6 +139,14 @@ footer {
 
 .slider-wrapper {
   height: 50vh;
+}
+
+.btn-margin {
+  margin: 5vh auto;
+}
+
+.btn-margin:hover {
+  margin: calc(5vh - 2px) auto;
 }
 
 .scene-3 .btn {
