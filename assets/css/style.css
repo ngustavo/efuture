@@ -9,7 +9,8 @@ body {
 
 header {
   padding: 1.5rem;
-  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 section {
@@ -34,6 +35,10 @@ section {
 
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 button {
@@ -65,21 +70,19 @@ button {
 .scene-1 article img {
   min-width: 40vw;
   min-height: 60vh;
-  max-width: 96vw;
+  max-width: 100vw;
   max-height: 80vh;
   object-fit: cover;
 }
 
 .scene-1 button {
-  margin-bottom: -75vh;
-  position: absolute;
+  bottom: 2vh;
 }
 
-h1 span {
+h2 span {
   font-weight: normal;
 }
 
-h1,
 h2 {
   text-align: center;
 }
@@ -94,14 +97,21 @@ h2 {
 .scene-3 article {
   gap: 10vw;
   flex-wrap: wrap;
-  padding: 5vh;
 }
 
-.scene-2 article img,
-.scene-3 article img {
-  max-width: 50vw;
-  max-height: 50vh;
-  margin: 5vw;
+.scene-2 .content,
+.scene-3 .content {
+  padding: 20px;
+}
+
+.scene-2 .text,
+.scene-3 .text {
+  padding: 0;
+  padding-right: 15px;
+}
+
+.scene-2 article img {
+  width: 50vh;
 }
 
 .scene-3 {
@@ -116,16 +126,23 @@ footer {
 }
 
 .scene-3 .slider img {
-  width: 30vw;
-  height: 50vh;
   object-fit: contain;
   margin: 0px;
   transition: display 2s ease;
   float: left;
+  width: 50vh;
+}
+
+.slider-wrapper {
+  width: calc(50vh + 100px);
+}
+
+.slider-wrapper:hover .btn {
+  visibility: visible;
 }
 
 .slider-box {
-  width: 30vw;
+  width: 50vh;
   overflow: hidden;
 }
 
@@ -133,26 +150,11 @@ footer {
   transition: all 0.5s ease;
 }
 
-.slider-wrapper:hover .btn {
-  visibility: visible;
-}
-
-.slider-wrapper {
-  height: 50vh;
-}
-
-.btn-margin {
-  margin: 5vh auto;
-}
-
-.btn-margin:hover {
-  margin: calc(5vh - 2px) auto;
-}
-
 .scene-3 .btn {
   visibility: hidden;
   justify-content: space-between;
-  margin-top: -200px;
+  width: 100%;
+  height: 100%;
 }
 
 .scene-3 .btn button {
@@ -170,9 +172,16 @@ footer {
   transform: rotate(180deg);
 }
 
+.btn-margin {
+  margin: 5vh auto;
+}
+
+.btn-margin:hover {
+  margin: calc(5vh - 2px) auto;
+}
+
 @media screen and (max-width: 900px) {
   header {
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
